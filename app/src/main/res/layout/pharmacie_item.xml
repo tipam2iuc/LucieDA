@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="10dp"
+        android:weightSum="8">
+
+        <ImageView
+            android:id="@+id/pharmacie_item_img"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon" />
+
+        <LinearLayout
+            android:padding="15dp"
+            android:layout_width="50dp"
+            android:layout_height="200dp"
+            android:layout_weight="4"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/pharmacie_item_name"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ggras"
+                android:text="Nom Pharmacie"
+                android:textColor="@color/coulour"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/pharmacie_item_ville"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gothic"
+                android:text="Ville"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/pharmacie_item_quartier"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gothic"
+                android:text="Quartier"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/pharmacie_item_desc"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gothic"
+                android:text="Description pharmacie"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
